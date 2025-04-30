@@ -1,12 +1,16 @@
+'use client';
+
 import Link from 'next/link'
 import Image from 'next/image'
 import selfImage from '../assets/images/self.jpg'
+import GitHubContributions from './GitHubContributions'
+import SocialLinks from './SocialLinks'
 
 const Hero = () => {
   return (
     <section className="bg-white">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-8">
           {/* Left Column */}
           <div>
             <div className="mb-8">
@@ -23,9 +27,10 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-black">
               Hello!
             </h1>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-black">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-black mb-2">
               I'm Warwick.
             </h1>
+            <SocialLinks />
           </div>
 
           {/* Right Column */}
@@ -38,6 +43,8 @@ const Hero = () => {
             </p>
           </div>
         </div>
+        
+        <GitHubContributions />
       </div>
     </section>
   )
