@@ -1,8 +1,6 @@
 'use client';
 
 import Image from 'next/image'
-import downloadIcon from '../assets/icons/download.svg'
-import sendIcon from '../assets/icons/send.svg'
 
 const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
@@ -33,13 +31,16 @@ const Navigation = () => {
               className="inline-flex items-center px-4 py-2 text-[13px] font-normal tracking-wide rounded-lg text-white bg-gradient-to-b from-[#333333] to-black hover:from-[#222222] hover:to-black shadow-sm transition-all duration-200 space-x-2 group border border-black font-mono font-[var(--font-roboto-mono)]"
             >
               <span>Contact Me</span>
-              <Image 
-                src={sendIcon} 
-                alt="Contact" 
-                width={16} 
-                height={16}
-                className="invert"
-              />
+              <svg 
+                className="w-4 h-4 ml-2 invert" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M4 20V4H20V20H4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M4 4L12 12L20 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M4 20L12 12L20 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </button>
             <a
               href="/resume.pdf"
@@ -47,13 +48,15 @@ const Navigation = () => {
               className="inline-flex items-center px-4 py-2 text-[13px] font-normal tracking-wide rounded-lg text-white bg-gradient-to-b from-[#333333] to-black hover:from-[#222222] hover:to-black shadow-sm transition-all duration-200 space-x-2 group border border-black font-mono font-[var(--font-roboto-mono)]"
             >
               <span>Resume</span>
-              <Image 
-                src={downloadIcon} 
-                alt="Download" 
-                width={16} 
-                height={16}
-                className="invert"
-              />
+              <svg 
+                className="w-4 h-4 ml-2 invert" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 4V16M12 16L8 12M12 16L16 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M4 20H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </a>
           </div>
         </div>
