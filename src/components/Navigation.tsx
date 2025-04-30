@@ -1,7 +1,5 @@
 'use client';
 
-import Image from 'next/image'
-
 const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
