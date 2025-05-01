@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image'
-import downloadIcon from '../assets/icons/download.svg'
-import sendIcon from '../assets/icons/send.svg'
+import downloadIcon from '../assets/icons/download.svg?url'
+import sendIcon from '../assets/icons/send.svg?url'
 
 const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
