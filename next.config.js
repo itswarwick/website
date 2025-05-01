@@ -3,6 +3,29 @@ const nextConfig = {
   images: {
     disableStaticImages: false,
   },
+  // Configure static file serving
+  async headers() {
+    return [
+      {
+        source: '/assets/:path*',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/pdf',
+          },
+        ],
+      },
+    ];
+  },
+  // Add static file serving from assets directory
+  async rewrites() {
+    return [
+      {
+        source: '/assets/:path*',
+        destination: '/src/assets/:path*',
+      },
+    ];
+  },
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find(

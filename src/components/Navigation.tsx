@@ -42,8 +42,8 @@ const Navigation = () => {
               />
             </button>
             <a
-              href="/resume.pdf"
-              download
+              href="/assets/WarwickResume2025.pdf"
+              download="WarwickResume2025.pdf"
               className="inline-flex items-center px-4 py-2 text-[13px] font-normal tracking-wide rounded-lg text-white bg-gradient-to-b from-[#333333] to-black hover:from-[#222222] hover:to-black shadow-sm transition-all duration-200 space-x-2 group border border-black font-mono font-[var(--font-roboto-mono)]"
             >
               <span>Resume</span>
