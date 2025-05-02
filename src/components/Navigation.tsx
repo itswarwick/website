@@ -43,7 +43,7 @@ const Navigation = () => {
 
   return (
     <nav className="fixed top-0 w-full bg-white z-50 border-b border-gray-100">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-4 pr-8 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Left section: Logo */}
           <div className="flex items-center">
@@ -56,19 +56,19 @@ const Navigation = () => {
           </div>
 
           {/* Right section: Action buttons */}
-          <div className="hidden sm:flex items-center space-x-4">
+          <div className="flex items-center space-x-2 md:space-x-4 pr-2">
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={handleContactClick}
-                className="inline-flex items-center px-4 py-2 text-[13px] font-normal tracking-wide rounded-lg text-white bg-gradient-to-b from-[#333333] to-black hover:from-[#222222] hover:to-black shadow-sm transition-all duration-200 space-x-2 group border border-black font-mono font-[var(--font-roboto-mono)] cursor-pointer"
+                className="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 text-xs md:text-[13px] font-normal tracking-wide rounded-lg text-white bg-gradient-to-b from-[#333333] to-black hover:from-[#222222] hover:to-black shadow-sm transition-all duration-200 space-x-1 md:space-x-2 group border border-black font-mono font-[var(--font-roboto-mono)] cursor-pointer"
               >
-                <span>Contact Me</span>
+                <span>Contact</span>
                 <Image 
                   src={sendIcon} 
                   alt="Contact" 
-                  width={16} 
-                  height={16}
-                  className="invert ml-2"
+                  width={14}
+                  height={14}
+                  className="invert ml-1"
                 />
               </button>
               
@@ -93,15 +93,15 @@ const Navigation = () => {
             <a
               href="/assets/WarwickResume2025.pdf"
               download="WarwickResume2025.pdf"
-              className="inline-flex items-center px-4 py-2 text-[13px] font-normal tracking-wide rounded-lg text-white bg-gradient-to-b from-[#333333] to-black hover:from-[#222222] hover:to-black shadow-sm transition-all duration-200 space-x-2 group border border-black font-mono font-[var(--font-roboto-mono)]"
+              className="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 text-xs md:text-[13px] font-normal tracking-wide rounded-lg text-white bg-gradient-to-b from-[#333333] to-black hover:from-[#222222] hover:to-black shadow-sm transition-all duration-200 space-x-1 md:space-x-2 group border border-black font-mono font-[var(--font-roboto-mono)]"
             >
               <span>Resume</span>
               <Image 
                 src={downloadIcon} 
                 alt="Download" 
-                width={16} 
-                height={16}
-                className="invert ml-2"
+                width={14}
+                height={14}
+                className="invert ml-1"
               />
             </a>
           </div>
