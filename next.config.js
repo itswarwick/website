@@ -10,8 +10,25 @@ const nextConfig = {
         source: '/assets/:path*',
         headers: [
           {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+          {
             key: 'Content-Type',
             value: 'application/pdf',
+          },
+        ],
+      },
+      {
+        source: '/assets/videos/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+          {
+            key: 'Content-Type',
+            value: 'video/mp4',
           },
         ],
       },
