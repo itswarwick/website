@@ -35,7 +35,7 @@ const Hero = () => {
           {/* Right Column */}
           <div className="space-y-6">
             <p className="text-black text-lg leading-relaxed font-mono font-[var(--font-roboto-mono)] text-[15px]">
-              Data-focused marketer and aspiring product analyst, I&apos;ve spent the last several years building and optimizing CRM and lifecycle strategies that drive meaningful growth. Lately, I&apos;ve been expanding my skill set into data analytics and product development — with a focus on tools that uncover insights, improve decision-making, and align teams around measurable outcomes.
+              Data-focused marketer, I&apos;ve spent the last several years building and optimizing CRM and lifecycle strategies that drive meaningful growth. Lately, I&apos;ve been expanding my skill set into data analytics and product development — with a focus on tools that uncover insights, improve decision-making, and align teams around measurable outcomes.
             </p>
             <p className="text-black text-lg leading-relaxed font-mono font-[var(--font-roboto-mono)] text-[15px]">
               Outside of work, I&apos;m developing independent projects that blend data engineering, visualization, and user experience — a natural extension of my ongoing studies in statistics and analytics.
